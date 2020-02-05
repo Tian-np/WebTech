@@ -1,0 +1,317 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How to Google</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- menu bar -->
+    <div class="container-fluid p-0 sticky">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">หน้าแรก </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">เทคนิคการค้นหา<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shortcut.html">คีย์ลัด</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ผลิตภัณฑ์ของกูเกิล
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="product.html">ผลิตภัณฑ์ทั้งหมด</a>
+                            <a class="dropdown-item" href="Youtube.html">Youtube</a>
+                            <a class="dropdown-item" href="Chrome.html">Google Chrome</a>
+                            <a class="dropdown-item" href="Meet.html">Google Meet</a>
+                            <a class="dropdown-item" href="Drive.html">Google Drive</a>
+                            <a class="dropdown-item" href="Gmail.html">Gmail</a>
+                            <a class="dropdown-item" href="Photos.html">Google Photos</a>
+                            <a class="dropdown-item" href="Quick-Draw.html">Google Quick Draw</a>
+                            <a class="dropdown-item" href="translate.html">Google Translate</a>
+                            <a class="dropdown-item" href="trend.html">Google Trends</a>
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">รายชื่อผู้จัดทำ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 4color -->
+        <div class="row container-fluid p-0 no-gutters" style="z-index: -1; position:absolute">
+            <div class="col-3 bg-blue p-1"></div>
+            <div class="col-3 bg-yellow p-1"></div>
+            <div class="col-3 bg-red p-1"></div>
+            <div class="col-3 bg-green p-1"></div>
+        </div>
+    </div>
+
+    <!-- headline -->
+
+    <div class="container-fluid p-5 mt-5">
+        <div class="row text-center">
+            <div class="col-12 pt-5 mb-5">
+                <h2 style="font-size: 4em;">Search<br>Tricks</h2>
+            </div>
+            <!-- <div class="col-4"></div>
+                <div class="col-4 pt-3"> -->
+            <div class="container">
+                <p class="lead">สุดยอดเคล็ดลับการค้นหาและเคล็ดลับของ Google เทคนิคการใช้ search
+                    ในแต่ละรูปแบบที่สามารถเลือกใช้งานได้ตามความเหมาะสมของข้อมูลในแต่ละรูปแบบ</p>
+            </div>
+            <i class="fa fa-angle-down" style="font-size:36px; width:100%"></i>
+            <!-- <div class="col-4"></div> -->
+        </div>
+    </div>
+
+    <!-- 3 col-->
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>site:</mark> kmitl.ac.th</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">จำกัดการค้นหาไว้ที่ไซต์เดียว
+                    สามารถทำการค้นหาทั่วไปและตรวจสอบอย่างรวดเร็วว่าข้อมูลตรงกับฐานข้อมูลหรือไม่</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย site:</p>
+                <input type="text" id="txt_1" placeholder="site:" />
+                <input class="bg-blue text-white" type="button" value="SEARCH" onclick="site();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>inurl:</mark> https</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">การค้นหา InURL สามารถใช้เพื่อค้นหาคำหลักเฉพาะภายใน URL
+                    เพื่อให้ในผลลัพธ์การค้นหาผลลัพธ์ที่แสดงคือหน้าเว็บที่มีคำหลักที่สอบถามใน URL </p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย inurl:</p>
+                <input type="text" id="txt_2" placeholder="inurl:" />
+                <input class="bg-yellow text-white" type="button" value="SEARCH" onclick="inurl();" />
+            </div>
+        </div>
+    </div>
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>filetype:</mark> pdf</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">การค้นหา FileType
+                    จะแสดงประเภทไฟล์ที่ถูกต้องในผลการค้นหาคุณเพียงพิมพ์ประเภทไฟล์และประเภทไฟล์ตามด้วยคำค้นหาเพื่อค้นหาผลลัพธ์ที่เกี่ยวข้อง
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย filetype:</p>
+                <input type="text" id="txt_3" placeholder="filetype:" />
+                <input class="bg-red text-white" type="button" value="SEARCH" onclick="filetype();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>define:</mark> cat</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">ใช้เพื่อการแปลภาษาจากข้อมูลหรือวลีที่ต้องการแปลภาษา</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย define:</p>
+                <input type="text" id="txt_4" placeholder="define:" />
+                <input class="bg-green text-white" type="button" value="SEARCH" onclick="define();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>related:</mark> kmitl.ac.th</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">การค้นหาที่เกี่ยวข้องของ Google
+                    เช่นเดียวกับการเพิ่มวลีคำหลักให้เหมาะกับบทความที่ต้องการค้นหาที่เกี่ยวข้อง</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย related:</p>
+                <input type="text" id="txt_5" placeholder="related:" />
+                <input class="bg-blue text-white" type="button" value="SEARCH" onclick="related();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>etymology:</mark> mortgage</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">
+                    การค้นหาข้อมูลหรือวลีจากแหล่งเก็บข้อมูลหรือในพจนานุกรมและสามารถค้นหาที่มาของข้อมูลได้</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย etymology:</p>
+                <input type="text" id="txt_6" placeholder="etymology:" />
+                <input class="bg-yellow text-white" type="button" value="SEARCH" onclick="etymology();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3>kmitl <mark>+it</mark></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">การใส่คำค้นหาของคุณในเครื่องหมายคำพูดจะเริ่มต้นการค้นหาแบบตรงทั้งหมดสำหรับวลีนั้น
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย +</p>
+                <input type="text" id="txt_p" value="kmitl +" />
+                <input class="bg-red text-white" type="button" value="SEARCH" onclick="searchp();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3>apple <mark>-fruit</mark></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">ยกเว้นคำหรือวลี ในตัวอย่างของเราหน้าใด ๆ ที่ส่งคืนจะเกี่ยวข้องกับงาน</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย -</p>
+                <input type="text" id="txt_m" value="apple -" />
+                <input class="bg-green text-white" type="button" value="SEARCH" onclick="searchm();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>"</mark> I love KMITL <mark>"</mark></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">การใส่คำค้นหาของคุณในเครื่องหมายคำพูดจะเริ่มต้นการค้นหาแบบตรงทั้งหมดสำหรับวลีนั้น
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย " "</p>
+                <input type="text" id="txt_t" value="" />
+                <input class="bg-blue text-white" type="button" value="SEARCH" onclick="searcht();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-3">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3><mark>intitle:</mark> iphone11</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">ค้นหาหน้าเว็บที่มีคำบางคำ (หรือคำ) ในชื่อเรื่อง</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย intitle:</p>
+                <input type="text" id="txt_7" placeholder="intitle:" />
+                <input class="bg-yellow text-white" type="button" value="SEARCH" onclick="intitle();" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container sdwh mb-5">
+        <div class="row text-center p-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <h3>hospital <mark>nearby</mark></h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 pt-5">
+                <p class="text-left">การค้นหาสถานที่ภายในพื้นที่ที่ระบุ สามารถปรับแต่งคำขอการค้นหาได้</p>
+            </div>
+            <div class="col-xs-12 col-md-4 p-5 bg-2c">
+                <p style="color: #8c8c8c;">ลองค้นหาด้วย nearby</p>
+                <input type="text" id="txt_8" placeholder="nearby" />
+                <input class="bg-red text-white" type="button" value="SEARCH" onclick="nearby();" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-left">
+                <div class="col-md-4">
+                    <h4 class="text-light">Pages</h4>
+                    <i>
+                        <a class="text-muted m-0" href="index.html">หน้าแรก</a><br>
+                        <a class="text-muted m-0" href="search.html">เทคนิคการค้นหา</a><br>
+                        <a class="text-muted m-0" href="shortcut.html">คีย์ลัด</a><br>
+                        <a class="text-muted m-0" href="product.html">ผลิตภัณฑ์ของกูเกิล</a><br>
+                        <a class="text-muted m-0" href="member.html">รายชื่อผู้จัดทำ</a>
+                    </i>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-light">Member</h4>
+                    <p class="text-muted m-0">61070044</p>
+                    <p class="text-muted m-0">61070065</p>
+                    <p class="text-muted m-0">61070084</p>
+                    <p class="text-muted m-0">61070087</p>
+                    <p class="text-muted m-0">61070190</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-light">This project</h4>
+                    <p class="text-muted">
+                        Part of Web technology class
+                        KMITL Faculty of Information Technology</p>
+                    <p class="text-muted">
+                        Copyright ©2019 Allright reserved
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

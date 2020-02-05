@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:300,400,600&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    background-color: #f9f9f9;
+}
+p {
+    font-weight: 300;
+}
+h1{
+    font-weight: 600;
+}
+h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+.navbar{
+    padding: 1.2rem;
+    background: #1c1c1c;
+    opacity: 0.97;
+}
+.navbar-nav li {
+    padding-right: 40px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+}
+mark{
+    background: lightgray;
+}
+footer{
+    background: #1c1c1c;
+    padding: 10vmin 18vmin;
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 9999;
+    transition:all 1.5s ease;
+}
+.bg-blue{
+    background: #4285f4;
+}
+.bg-green{
+    background: #34a853;
+}
+.bg-yellow{
+    background: #fbbc05;
+}
+.bg-red{
+    background: #ea4335;
+}
+.bg-white{
+    background: white;
+}
+.bg-f0{
+    background: #f0f0f0;
+}
+.bg-7c{
+    background: #7c7c7c;
+}
+.bg-3c{
+    background: #3c3c3c;
+}
+.bg-2c{
+    background: #2c2c2c;
+}
+.ctrt{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.sdwh {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .sdwh:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .sdwr {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+    /* border-radius: 10px; */
+  }
+  
+  .sdwr:hover {
+    box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 0px 0px rgba(0,0,0,0.22);
+  }
+
+  .sdw {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  input, button {
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    height: 36px;
+    width: 120px;
+    font-size: 0.9em;
+    font-weight: 300;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  label{
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+/* Card for Keyboard Shortcut */
+.bg-a{
+    background: #dfdfdf;
+}.bshadow{
+    box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flip-card {
+    background-color: transparent;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.75s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
